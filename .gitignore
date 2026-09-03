@@ -1,0 +1,44 @@
+## Build
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+*.user
+*.userosscache
+*.suo
+*.userprefs
+*.vspscc
+*.vssscc
+.vs/
+.vscode/
+*.binlog
+
+## NuGet
+*.nupkg
+*.snupkg
+**/packages/*
+!**/packages/build/
+project.lock.json
+artifacts/
+
+## Test / coverage
+TestResults/
+coverage*.json
+coverage*.xml
+*.coverage
+*.coveragexml
+
+## Benchmarks
+BenchmarkDotNet.Artifacts/
+
+## OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+## Secrets
+*.pfx
+*.snk
+.env
+.env.*
+!*.env.example

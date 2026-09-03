@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Sequora/Sequora.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Sequora.Tests/Sequora.Tests.csproj" />
+  </Folder>
+  <Folder Name="/benchmarks/">
+    <Project Path="benchmarks/Sequora.Benchmarks/Sequora.Benchmarks.csproj" />
+  </Folder>
+</Solution>

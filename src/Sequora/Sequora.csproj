@@ -1,0 +1,53 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
+    <RootNamespace>Sequora</RootNamespace>
+    <AssemblyName>Sequora</AssemblyName>
+    <IsPackable>true</IsPackable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <IsAotCompatible>true</IsAotCompatible>
+    <EnableTrimAnalyzer>true</EnableTrimAnalyzer>
+    <NeutralLanguage>en</NeutralLanguage>
+
+    <!-- Package identity -->
+    <PackageId>Sequora</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Sequora Contributors</Authors>
+    <Company>Sequora</Company>
+    <Product>Sequora</Product>
+    <Copyright>Copyright (c) 2026 Sequora Contributors</Copyright>
+    <Description>Lightweight in-process, in-memory job queue for .NET. Register handlers with dependency injection and enqueue work for hosted workers. Jobs live only in process memory: a crash can lose queued work. Does not provide exactly-once delivery or execution.</Description>
+    <PackageTags>queue;background-jobs;in-process;in-memory;hosting;dotnet</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageReleaseNotes>1.0.0: First stable release. In-process in-memory job processing for net8.0, net9.0, and net10.0.</PackageReleaseNotes>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <EmbedUntrackedSources>false</EmbedUntrackedSources>
+    <PackageOutputPath>$(MSBuildThisFileDirectory)..\..\artifacts\nuget\</PackageOutputPath>
+    <EnableSourceControlManagerQueries>false</EnableSourceControlManagerQueries>
+    <!-- RepositoryUrl, RepositoryType, and PackageProjectUrl are omitted until a public repository exists. -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+    <None Include="..\..\LICENSE" Pack="true" PackagePath="\" />
+    <None Include="..\..\assets\icon.png" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="Sequora.Tests" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.11" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="10.0.11" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="10.0.11" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.11" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="10.0.11" />
+  </ItemGroup>
+
+</Project>
