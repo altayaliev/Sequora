@@ -24,14 +24,14 @@ public sealed class SmokeTests
         Assembly assembly = typeof(IJobQueue).Assembly;
         AssemblyName assemblyName = assembly.GetName();
 
-        Assert.Equal(new Version(1, 0, 0, 0), assemblyName.Version);
+        Assert.Equal(new Version(1, 0, 1, 0), assemblyName.Version);
 
         string? informational = assembly
             .GetCustomAttribute<AssemblyInformationalVersionAttribute>()
             ?.InformationalVersion;
 
         Assert.NotNull(informational);
-        Assert.StartsWith("1.0.0", informational, StringComparison.Ordinal);
+        Assert.StartsWith("1.0.1", informational, StringComparison.Ordinal);
     }
 
     [Fact]

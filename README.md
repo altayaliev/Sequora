@@ -6,7 +6,7 @@ Lightweight, in-process, in-memory job queue and background job processing for .
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![.NET](https://img.shields.io/badge/.NET-8%20%7C%209%20%7C%2010-512BD4.svg)](#supported-frameworks)
-[![Version](https://img.shields.io/badge/version-1.0.0-informational.svg)](#nuget-package)
+[![Version](https://img.shields.io/badge/version-1.0.1-informational.svg)](#nuget-package)
 
 ## English
 
@@ -56,7 +56,7 @@ The project is developed with the .NET 10 SDK (`global.json` pins `10.0.400`). .
 dotnet add package Sequora
 ```
 
-Package id: **Sequora**. Current version: **1.0.0**. License: **MIT**.
+Package id: **Sequora**. Current version: **1.0.1**. License: **MIT**.
 
 A public NuGet.org listing and source-repository URL are not published from this tree. Pack locally with `dotnet pack` when you need a `.nupkg`.
 
@@ -361,12 +361,12 @@ The test project `Sequora.Tests` covers enqueue, handlers, DI, workers, concurre
 | | |
 | --- | --- |
 | Package id | `Sequora` |
-| Version | `1.0.0` |
+| Version | `1.0.1` |
 | Targets | `net8.0`, `net9.0`, `net10.0` |
 | License | MIT |
 | Icon | packaged `icon.png` |
 | README | this file (`PackageReadmeFile`) |
-| Symbols | `Sequora.1.0.0.snupkg` |
+| Symbols | `Sequora.1.0.1.snupkg` |
 
 This tree does not publish to nuget.org. Repository URL metadata is omitted until a public repository exists.
 
@@ -428,7 +428,7 @@ Layihə .NET 10 SDK ilə hazırlanır (`global.json` `10.0.400` versiyasını ba
 dotnet add package Sequora
 ```
 
-Paket identifikatoru: **Sequora**. Cari versiya: **1.0.0**. Lisenziya: **MIT**.
+Paket identifikatoru: **Sequora**. Cari versiya: **1.0.1**. Lisenziya: **MIT**.
 
 Bu layihə ağacından nuget.org-a paket göndərilmir və ictimai mənbə ünvanı yoxdur. `.nupkg` lazım olanda `dotnet pack` ilə yerli paket yığın.
 
@@ -733,12 +733,12 @@ dotnet build src/Sequora/Sequora.csproj -f net10.0
 | | |
 | --- | --- |
 | Paket id | `Sequora` |
-| Versiya | `1.0.0` |
+| Versiya | `1.0.1` |
 | Hədəflər | `net8.0`, `net9.0`, `net10.0` |
 | Lisenziya | MIT |
 | İkon | paketlənmiş `icon.png` |
 | README | bu fayl (`PackageReadmeFile`) |
-| Simvollar | `Sequora.1.0.0.snupkg` |
+| Simvollar | `Sequora.1.0.1.snupkg` |
 
 Bu ağac nuget.org-a dərc etmir. İctimai depo olmayana qədər Repository URL metadata-sı yazılmır.
 

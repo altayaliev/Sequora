@@ -12,7 +12,7 @@
 
     <!-- Package identity -->
     <PackageId>Sequora</PackageId>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <Authors>Altay Aliyev</Authors>
     <Company>Sequora</Company>
     <Product>Sequora</Product>
@@ -23,7 +23,7 @@
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageIcon>icon.png</PackageIcon>
-    <PackageReleaseNotes>1.0.0: First stable release. In-process in-memory job processing for net8.0, net9.0, and net10.0.</PackageReleaseNotes>
+    <PackageReleaseNotes>1.0.1: Updated package icon and logo. No functional changes.</PackageReleaseNotes>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
